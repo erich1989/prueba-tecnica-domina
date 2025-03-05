@@ -19,7 +19,7 @@ La aplicación permite a los usuarios registrarse, iniciar sesión y realizar op
 
 ### Clona el repositorio:
 
-Abre una terminal y ejecuta: git clone https://github.com/tu-usuario/tu-repositorio.git
+Abre una terminal y ejecuta: git clone https://github.com/erich1989/prueba-tecnica-domina.git
 
 Navega a la carpeta del proyecto: cd tu-repositorio
 
@@ -41,7 +41,7 @@ Ejecuta: docker-compose down
 
 ### Clona el repositorio:
 
-Abre una terminal y ejecuta: git clone https://github.com/tu-usuario/tu-repositorio.git
+Abre una terminal y ejecuta: git clone https://github.com/erich1989/prueba-tecnica-domina.git
 
 Navega a la carpeta del proyecto: cd tu-repositorio
 
