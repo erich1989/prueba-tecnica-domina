@@ -1,0 +1,36 @@
+.scrolling-container {
+    background-color: #212529;
+    /* padding: 3px; */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    white-space: nowrap; /* Mantiene todo el contenido en una sola línea */
+}
+
+.scrolling-content {
+    display: inline-flex; /* Hace que los elementos se alineen en una fila */
+    align-items: center; /* Centra verticalmente los elementos */
+    animation: scroll 30s linear infinite; /* Aplica la animación de desplazamiento */
+}
+
+/* Definimos la animación */
+@keyframes scroll {
+    0% {
+        transform: translateX(300%); /* Comienza fuera de la pantalla por la derecha */
+    }
+    100% {
+        transform: translateX(-100%); /* Se mueve completamente hacia la izquierda */
+    }
+}
+
+.chip {
+    background-color: #e52727 !important;
+    color: white !important;
+    font-weight: 700;
+    /* padding: 0px 5px; */
+    margin-right: 20px;
+    border-radius: 16px;
+}
+
+.scrolling-text {
+    color: white;
+    font-size: 16px;
+}

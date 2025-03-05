@@ -1,0 +1,54 @@
+services:
+  frontend:
+    build: ./1.frontend
+    ports:
+      - '4000:4000'
+    volumes:
+      - ./1.frontend:/app
+    environment:
+      - NODE_ENV=development
+    command: npm start
+    networks:
+      - app-network
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./api-gateway:/app # Monta toda la carpeta del servicio
+    environment:
+      - NODE_ENV=development
+      # - HTTP_SERVICE_URL=http://http-service:5001
+      # - WS_SERVICE_URL=ws://websocket-service:5002
+    command: npm run dev
+    networks:
+      - app-network # Agrega el servicio a la red
+
+  auth-service:
+    build: ./auth-service
+    ports:
+      - '5001:5001'
+    volumes:
+      - ./auth-service:/app # Monta toda la carpeta del servicio
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+    networks:
+      - app-network # Agrega el servicio a la misma red
+
+  http-service:
+    build: ./http-service
+    ports:
+      - '5002:5002'
+    volumes:
+      - ./http-service:/app # Monta toda la carpeta del servicio
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
+    networks:
+      - app-network # Agrega el servicio a la misma red
+
+networks:
+  app-network:
+    driver: bridge # Define una red bridge para los servicios
