@@ -7,12 +7,13 @@ La aplicación permite a los usuarios registrarse, iniciar sesión y realizar op
 ---
 
 ### Características Principales:
-- **Autenticación y Autorización:** Gestión de usuarios y roles mediante el **Auth Service**.
+- **Frontend:** Interfaz de usuario interactiva construida con React. Permite funcionalidades como **inicio de sesión**, **registro de usuario**, y la capacidad de **crear**, **editar** y **eliminar tareas**.
 - **API Gateway:** Centraliza las solicitudes y redirige a los microservicios correspondientes.
-- **Frontend Dinámico:** Interfaz de usuario interactiva construida con React.
+- **Auth Service:** **Autenticación y Autorización**, Gestión de usuarios y roles, permitiendo el control de acceso.
+- **Http Service:** Gestión de peticiones HTTP para la manipulación de tareas, incluyendo operaciones como **obtener**, **crear**, **editar** y **eliminar** tareas.
 - **Escalabilidad:** Arquitectura basada en microservicios que permite escalar componentes individualmente.
 - **Contenerización:** Uso de Docker y Docker Compose para facilitar el despliegue y desarrollo.
-- **Base de Datos:** Para la persistencia de datos, se ha implementado MongoDB, una base de datos NoSQL orientada a documentos. Esta elección permite una mayor flexibilidad en el manejo de datos y facilita la escalabilidad de la aplicación.
+- **Base de Datos:** Para la persistencia de datos, se ha implementado **MongoDB**, una base de datos NoSQL orientada a documentos. Esta elección permite una mayor flexibilidad en el manejo de datos y facilita la escalabilidad de la aplicación.
 
 ---
 
