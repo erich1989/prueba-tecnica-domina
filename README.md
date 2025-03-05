@@ -16,7 +16,17 @@ La aplicación permite a los usuarios registrarse, iniciar sesión y realizar op
 
 ---
 
-## Instalación con Docker Compose
+# Instalación
+
+Puedes iniciar este proyecto en tu entorno local de dos maneras: utilizando **Docker** con **docker-compose**, o de forma nativa con **Node.js**. A continuación se detallan ambas opciones para que elijas la que prefieras.
+
+1. **Instalación con Docker y docker-compose**
+2. **Instalación de forma nativa con Node.js**
+
+Elige el método que mejor se adapte a tus necesidades o preferencias. A continuación, se explican los pasos para cada opción.
+
+
+## 1. Instalación con Docker Compose
 
 ### Clona el repositorio:
 
@@ -101,7 +111,7 @@ Ejecuta:
 docker-compose down
 ```
 
-## Instalación Manual con npm
+## 2. Instalación Manual con npm
 
 ### Clona el repositorio:
 
