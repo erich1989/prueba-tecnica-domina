@@ -22,15 +22,25 @@ La aplicación permite a los usuarios registrarse, iniciar sesión y realizar op
 
 Abre una terminal y ejecuta: git clone https://github.com/erich1989/prueba-tecnica-domina.git
 
-Navega a la carpeta del proyecto: cd tu-repositorio
+Navega a la carpeta donde clonaste el proyecto:
+```Bash
+cd /tu-repositorio
+```
 
 ### Instala las dependencias de cada servicio:
 
 #### Frontend:
 
-Navega a la carpeta: cd 1.frontend
+Navega a la carpeta:
+```Bash
+cd 1.frontend
+```
 
-Ejecuta: npm install
+Ejecuta: 
+
+```Bash
+npm install
+```
 
 #### API Gateway:
 
@@ -127,4 +137,4 @@ Ejecuta: npm start
 
 #### Variables de Entorno
 
-Para facilitar la configuración y el despliegue, las variables de entorno necesarias para cada servicio se encuentran en archivos `.env` dentro de sus respectivos directorios (por ejemplo, `1.frontend/.env`, `api-gateway/.env`, etc.). Asegúrate de revisar y modificar estos archivos con los valores adecuados antes de ejecutar la aplicación.
+Para facilitar la configuración y el despliegue, las variables de entorno necesarias para cada servicio se encuentran en archivos `.env` dentro de sus respectivos directorios (por ejemplo, `1.frontend/.env`, `api-gateway/.env`, etc.).
