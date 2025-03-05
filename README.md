@@ -18,7 +18,20 @@ La aplicación permite a los usuarios registrarse, iniciar sesión y realizar op
 
 # Instalación
 
-Puedes iniciar este proyecto en tu entorno local de dos maneras: utilizando **Docker** con **docker-compose**, o de forma nativa con **Node.js**. A continuación se detallan ambas opciones para que elijas la que prefieras.
+Para iniciar este proyecto en tu entorno local, primero asegúrate de cumplir con los siguientes **prerequisitos**.
+
+## Prerequisitos
+
+Antes de proceder con la instalación, asegúrate de tener instalados los siguientes programas:
+
+- **Docker** y **docker-compose** (si eliges la instalación con Docker)
+- **Node.js** (si eliges la instalación nativa)
+
+Si ya tienes estas herramientas, puedes continuar con la instalación utilizando uno de los dos métodos disponibles.
+
+---
+
+Puedes iniciar este proyecto de dos maneras: utilizando **Docker** con **docker-compose**, o de forma nativa con **Node.js**. A continuación, se detallan ambas opciones para que elijas la que prefieras.
 
 1. **Instalación con Docker y docker-compose**
 2. **Instalación de forma nativa con Node.js**
