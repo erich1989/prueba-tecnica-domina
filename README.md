@@ -106,7 +106,6 @@ npm install
 ```
 
 ### Construye y levanta los contenedores:
-
 Ejecuta:
 ```Bash
 sudo docker-compose up --build
