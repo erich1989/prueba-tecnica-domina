@@ -24,6 +24,32 @@ Abre una terminal y ejecuta: git clone https://github.com/erich1989/prueba-tecni
 
 Navega a la carpeta del proyecto: cd tu-repositorio
 
+### Instala las dependencias de cada servicio:
+
+#### Frontend:
+
+Navega a la carpeta: cd 1.frontend
+
+Ejecuta: npm install
+
+#### API Gateway:
+
+Navega a la carpeta: cd ../api-gateway
+
+Ejecuta: npm install
+
+#### Auth Service:
+
+Navega a la carpeta: cd ../auth-service
+
+Ejecuta: npm install
+
+#### HTTP Service:
+
+Navega a la carpeta: cd ../http-service
+
+Ejecuta: npm install
+
 ### Construye y levanta los contenedores:
 
 Ejecuta: docker-compose up --build
