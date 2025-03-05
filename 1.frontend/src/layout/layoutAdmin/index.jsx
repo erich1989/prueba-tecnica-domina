@@ -26,6 +26,7 @@ import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import ViewCarouselIcon from '@mui/icons-material/ViewCarousel';
 
 import LogoPartnecol from '../../images/logo-partcol-blanco.png';
+import MenuProfil from './menuProfil';
 import Loader from '../../components/loader/loader';
 
 const drawerWidth = 270;
@@ -132,13 +133,15 @@ export default function PersistentDrawerLeft() {
                     >
                         <MenuIcon />
                     </IconButton> */}
-                   
+
                     <CardMedia
                         component="img"
                         image={'https://domina.com.co/wp-content/uploads/2021/09/Logo-blanco-250.png'}
                         alt="Paella dish"
-                        sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, width: 150 }}
+                        sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, width: 150, marginRight: 'auto' }}
                     />
+
+                    <MenuProfil />
                     {/* </Link> */}
                 </Toolbar>
             </AppBar>
@@ -208,7 +211,7 @@ export default function PersistentDrawerLeft() {
             </Drawer> */}
             <Main open={open}>
                 {/* <DrawerHeader /> */}
-                <Box component="main" id="detail" sx={{pt: 10}}>
+                <Box component="main" id="detail" sx={{ pt: 10 }}>
                     <Outlet />
                 </Box>
                 <Loader open={openLoader} />
