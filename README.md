@@ -12,6 +12,7 @@ La aplicación permite a los usuarios registrarse, iniciar sesión y realizar op
 - **Frontend Dinámico:** Interfaz de usuario interactiva construida con React.
 - **Escalabilidad:** Arquitectura basada en microservicios que permite escalar componentes individualmente.
 - **Contenerización:** Uso de Docker y Docker Compose para facilitar el despliegue y desarrollo.
+- **Base de Datos:** Para la persistencia de datos, se ha implementado MongoDB, una base de datos NoSQL orientada a documentos. Esta elección permite una mayor flexibilidad en el manejo de datos y facilita la escalabilidad de la aplicación.
 
 ---
 
