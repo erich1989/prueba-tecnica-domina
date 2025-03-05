@@ -169,28 +169,52 @@ npm install
 
 #### API Gateway:
 
-Navega a la carpeta: cd ../api-gateway
+Navega a la carpeta:
+```Bash
+cd ../api-gateway
+```
 
-Ejecuta: npm run dev
+Ejecuta:
+```Bash
+npm run dev
+```
 
 #### Auth Service:
 
-Navega a la carpeta: cd ../auth-service
+Navega a la carpeta:
+```Bash
+cd ../auth-service
+```
 
-Ejecuta: npm run dev
+Ejecuta:
+```Bash
+npm run dev
+```
 
 #### HTTP Service:
 
-Navega a la carpeta: cd ../http-service
+Navega a la carpeta:
+```Bash
+cd ../http-service
+```
 
-Ejecuta: npm run dev
+Ejecuta:
+```Bash
+npm run dev
+```
 
 #### Frontend:
 
-Navega a la carpeta: cd ../1.frontend
+Navega a la carpeta:
+```Bash
+cd ../1.frontend
+```
 
-Ejecuta: npm start
+Ejecuta:
+```Bash
+npm start
+```
 
-#### Variables de Entorno
+### Variables de Entorno
 
 Para facilitar la configuración y el despliegue, las variables de entorno necesarias para cada servicio se encuentran en archivos `.env` dentro de sus respectivos directorios (por ejemplo, `1.frontend/.env`, `api-gateway/.env`, etc.).
