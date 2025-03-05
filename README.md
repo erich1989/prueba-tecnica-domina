@@ -121,7 +121,7 @@ Backend (API Gateway): Estará disponible en http://localhost:5000.
 
 Ejecuta:
 ```Bash
-docker-compose down
+sudo docker-compose down
 ```
 
 ## 2. Instalación Manual con npm
