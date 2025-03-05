@@ -111,8 +111,6 @@ function PagesAdmin() {
 
                     {!progress &&
                         <Grid container spacing={3}>
-
-
                             {myPages.map((page, index) => (
                                 <Grid item xs={3} key={index}>
                                     <Paper elevation={3} sx={{ p: 3, borderRadius: 2, boxShadow: 4, backgroundColor: '#fafafa' }}>

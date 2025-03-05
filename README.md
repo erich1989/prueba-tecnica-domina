@@ -109,7 +109,7 @@ npm install
 
 Ejecuta:
 ```Bash
-docker-compose up --build
+sudo docker-compose up --build
 ```
 
 ### Accede a la aplicación:
