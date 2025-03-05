@@ -20,9 +20,12 @@ La aplicación permite a los usuarios registrarse, iniciar sesión y realizar op
 
 ### Clona el repositorio:
 
-Abre una terminal y ejecuta: git clone https://github.com/erich1989/prueba-tecnica-domina.git
+Abre una terminal y ejecuta:
+```Bash
+git clone https://github.com/erich1989/prueba-tecnica-domina.git
+```
 
-Navega a la carpeta donde clonaste el proyecto:
+Desde la terminal navega a la carpeta donde clonaste el proyecto:
 ```Bash
 cd /tu-repositorio
 ```
@@ -44,25 +47,46 @@ npm install
 
 #### API Gateway:
 
-Navega a la carpeta: cd ../api-gateway
+Navega a la carpeta:
+```Bash
+cd ../api-gateway
+```
 
-Ejecuta: npm install
+Ejecuta: 
+```Bash
+npm install
+```
 
 #### Auth Service:
 
-Navega a la carpeta: cd ../auth-service
+Navega a la carpeta:
+```Bash
+cd ../auth-service
+```
 
-Ejecuta: npm install
+Ejecuta:
+```Bash
+npm install
+```
 
 #### HTTP Service:
 
-Navega a la carpeta: cd ../http-service
+Navega a la carpeta:
+```Bash
+cd ../http-service
+```
 
-Ejecuta: npm install
+Ejecuta:
+```Bash
+npm install
+```
 
 ### Construye y levanta los contenedores:
 
-Ejecuta: docker-compose up --build
+Ejecuta:
+```Bash
+docker-compose up --build
+```
 
 ### Accede a la aplicación:
 
@@ -72,42 +96,74 @@ Backend (API Gateway): Estará disponible en http://localhost:5000.
 
 ### Detener los contenedores:
 
-Ejecuta: docker-compose down
+Ejecuta:
+```Bash
+docker-compose down
+```
 
 ## Instalación Manual con npm
 
 ### Clona el repositorio:
 
-Abre una terminal y ejecuta: git clone https://github.com/erich1989/prueba-tecnica-domina.git
+Abre una terminal y ejecuta:
 
-Navega a la carpeta del proyecto: cd tu-repositorio
+```Bash
+git clone https://github.com/erich1989/prueba-tecnica-domina.git
+```
 
-### Instala las dependencias de cada servicio:
+Desde la terminal navega a la carpeta donde clonaste el proyecto:
+```Bash
+cd /tu-repositorio
+```
 
 #### Frontend:
 
-Navega a la carpeta: cd 1.frontend
+Navega a la carpeta:
+```Bash
+cd 1.frontend
+```
 
-Ejecuta: npm install
+Ejecuta: 
+
+```Bash
+npm install
+```
 
 #### API Gateway:
 
-Navega a la carpeta: cd ../api-gateway
+Navega a la carpeta:
+```Bash
+cd ../api-gateway
+```
 
-Ejecuta: npm install
+Ejecuta: 
+```Bash
+npm install
+```
 
 #### Auth Service:
 
-Navega a la carpeta: cd ../auth-service
+Navega a la carpeta:
+```Bash
+cd ../auth-service
+```
 
-Ejecuta: npm install
+Ejecuta:
+```Bash
+npm install
+```
 
 #### HTTP Service:
 
-Navega a la carpeta: cd ../http-service
+Navega a la carpeta:
+```Bash
+cd ../http-service
+```
 
-Ejecuta: npm install
-
+Ejecuta:
+```Bash
+npm install
+```
 
 ## Inicia los servicios:
 
