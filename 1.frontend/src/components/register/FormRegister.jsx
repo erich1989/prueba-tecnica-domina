@@ -240,7 +240,7 @@ function FormRegister() {
                     </Typography>
 
                     <Grid container spacing={3}>
-                        <Grid item xs={6}>
+                        <Grid item xs={12} md={6}>
                             <FormControl variant="outlined" fullWidth>
                                 <InputLabel htmlFor="outlined-firstname">Nombres *</InputLabel>
                                 <OutlinedInput
@@ -262,7 +262,7 @@ function FormRegister() {
                                 />
                             </FormControl>
                         </Grid>
-                        <Grid item xs={6}>
+                        <Grid item xs={12} md={6}>
                             <FormControl variant="outlined" fullWidth>
                                 <InputLabel htmlFor="outlined-lastname">Apellidos *</InputLabel>
                                 <OutlinedInput
@@ -285,51 +285,6 @@ function FormRegister() {
                             </FormControl>
                         </Grid>
                         <Grid item xs={6}>
-                            <FormControl variant="outlined" fullWidth>
-                                <InputLabel htmlFor="outlined-email">Correo Electrónico *</InputLabel>
-                                <OutlinedInput
-                                    id="outlined-email"
-                                    size='small'
-                                    type={'email'}
-                                    name='email'
-                                    value={userValues.email}
-                                    onChange={handleUserValues}
-                                    startAdornment={
-                                        <InputAdornment position="start">
-                                            <IconButton edge="start">
-                                                <EmailOutlinedIcon />
-                                            </IconButton>
-                                        </InputAdornment>
-                                    }
-                                    label="Correo Electrónico *"
-                                    error={error.email}
-                                />
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl variant="outlined" fullWidth>
-                                <InputLabel htmlFor="outlined-email">Celular *</InputLabel>
-                                <OutlinedInput
-                                    id="outlined-email"
-                                    size='small'
-                                    type={'text'}
-                                    name='phone'
-                                    value={userValues.phone}
-                                    onChange={handleUserValues}
-                                    startAdornment={
-                                        <InputAdornment position="start">
-                                            <IconButton edge="start">
-                                                <PhoneIcon />
-                                            </IconButton>
-                                        </InputAdornment>
-                                    }
-                                    label="Celular *"
-                                    error={error.phone}
-                                />
-                            </FormControl>
-                        </Grid>
-
-                        <Grid item xs={12}>
                             <FormControl variant="outlined" fullWidth>
                                 <InputLabel htmlFor="outlined-gender">Género *</InputLabel>
                                 <Select
@@ -354,6 +309,55 @@ function FormRegister() {
                                 </Select>
                             </FormControl>
                         </Grid>
+
+                        <Grid item xs={6}>
+                            <FormControl variant="outlined" fullWidth>
+                                <InputLabel htmlFor="outlined-email">Celular *</InputLabel>
+                                <OutlinedInput
+                                    id="outlined-email"
+                                    size='small'
+                                    type={'text'}
+                                    name='phone'
+                                    value={userValues.phone}
+                                    onChange={handleUserValues}
+                                    startAdornment={
+                                        <InputAdornment position="start">
+                                            <IconButton edge="start">
+                                                <PhoneIcon />
+                                            </IconButton>
+                                        </InputAdornment>
+                                    }
+                                    label="Celular *"
+                                    error={error.phone}
+                                />
+                            </FormControl>
+                        </Grid>
+
+                        <Grid item xs={12} md={12}>
+                            <FormControl variant="outlined" fullWidth>
+                                <InputLabel htmlFor="outlined-email">Correo Electrónico *</InputLabel>
+                                <OutlinedInput
+                                    id="outlined-email"
+                                    size='small'
+                                    type={'email'}
+                                    name='email'
+                                    value={userValues.email}
+                                    onChange={handleUserValues}
+                                    startAdornment={
+                                        <InputAdornment position="start">
+                                            <IconButton edge="start">
+                                                <EmailOutlinedIcon />
+                                            </IconButton>
+                                        </InputAdornment>
+                                    }
+                                    label="Correo Electrónico *"
+                                    error={error.email}
+                                />
+                            </FormControl>
+                        </Grid>
+                      
+
+                       
 
                         <Grid item xs={6}>
                             <FormControl variant="outlined" fullWidth>

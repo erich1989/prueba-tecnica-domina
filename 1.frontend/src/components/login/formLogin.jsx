@@ -17,10 +17,26 @@ import Link from '@mui/material/Link';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { Box, CardMedia } from '@mui/material';
+import { keyframes } from '@emotion/react';
 
 import actionUser from '../../actions/user';
 import { setLocalStorageToken } from '../../conf';
 import Loader from '../loader/loader';
+
+const pulseAnimation = keyframes`
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+`;
 
 function FormLogin({ setOpen }) {
     const { setIsLoggedIn, setInfoUser } = useContext(ShopContext);
@@ -231,8 +247,18 @@ function FormLogin({ setOpen }) {
 
                         <Grid item xs={12} sx={{ textAlign: 'center' }}>
                             <Typography variant="body1">
-                                ¿No tienes cuenta?{' '}
-                                <Link underline='none' href="/register" sx={{ color: '#e52727', fontWeight: 700 }}>
+                                <span style={{marginRight: 3, fontWeight: 600}}>
+                                    ¿No tienes cuenta?{' '}
+                                </span>
+                                
+                                <Link underline='none' href="/register"
+                                sx={{
+                                    color: '#e52727',
+                                    fontWeight: 700,
+                                    animation: `${pulseAnimation} 2s infinite`,
+                                    display: 'inline-block',
+                                }}
+                                >
                                     Regístrate
                                 </Link>
                             </Typography>

@@ -10,7 +10,7 @@ function Login() {
             <Grid container spacing={0} justifyContent={'center'} alignItems={'center'}
                 sx={{ height: '100vh' }}
             >
-                <Grid xs={4} >
+                <Grid xs={12} md={4}>
                     <Box sx={{ p: 4, border: '1px solid #ccc', borderRadius: '5px', boxShadow: 1 }}>
                         <FormLogin />
                     </Box>

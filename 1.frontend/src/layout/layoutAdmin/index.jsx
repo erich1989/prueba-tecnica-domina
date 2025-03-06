@@ -138,7 +138,7 @@ export default function PersistentDrawerLeft() {
                         component="img"
                         image={'https://domina.com.co/wp-content/uploads/2021/09/Logo-blanco-250.png'}
                         alt="Paella dish"
-                        sx={{ mr: 1, width: 150, marginRight: 'auto' }}
+                        sx={{ mr: 1, width: {xs: 120, md: 150}, marginRight: 'auto' }}
                     />
 
                     <MenuProfil />
