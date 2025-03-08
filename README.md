@@ -54,6 +54,16 @@ Desde la terminal navega a la carpeta donde clonaste el proyecto:
 cd /tu-repositorio
 ```
 
+**Importante:** Para trabajar con la versión de **node js** nativa, es necesario actualizar las variables de entorno en el archivo **.env** ubicado en la carpeta `api-gateway`. Asegúrate de reemplazar las variables de entorno actuales con los siguientes valores:
+
+```bash
+AUTH_SERVICE_URL=http://localhost:5001/auth-service
+HTTP_SERVICE_URL=http://localhost:5002/http-service
+
+```
+
+Con estos cambios, el servicio utilizará las variables de entorno correctas en lugar de las configuradas en **docker-compose**. Una vez realizados estos ajustes, continúa con los siguientes pasos.
+
 ### Instala las dependencias de cada servicio:
 
 #### Frontend:
