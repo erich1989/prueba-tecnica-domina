@@ -28,7 +28,7 @@ function App() {
 
         const host = window.location.host;
         // console.log(host);
-        retunCompanyIdentity(host);
+        // retunCompanyIdentity(host);
 
     }, []);
 

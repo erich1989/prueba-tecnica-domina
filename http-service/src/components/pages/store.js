@@ -5,6 +5,7 @@ const Section = require('../sections/model');
 async function getAll() {
     try {
         const pages = await Page.find();
+        console.log(pages)
         if (!pages) {
             throw new Error('Page not found');
         };

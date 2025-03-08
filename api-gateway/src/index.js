@@ -19,13 +19,13 @@ async function requestLogin(req, res) {
         let httpServiceUrl = '';
 
         if (req.url === '/login') {
-            httpServiceUrl = 'http://auth-service:5001/auth-service/user';
+            httpServiceUrl =  `${process.env.AUTH_SERVICE_URL}/user`
         }
         else if (req.url === '/register') {
-            httpServiceUrl = 'http://auth-service:5001/auth-service/user';
+            httpServiceUrl =  `${process.env.AUTH_SERVICE_URL}/user`
         }
         else {
-            httpServiceUrl = 'http://auth-service:5001/auth-service';
+            httpServiceUrl =  `${process.env.AUTH_SERVICE_URL}`
         }
 
         console.log(`${httpServiceUrl}${req.url}`);
@@ -36,7 +36,7 @@ async function requestLogin(req, res) {
         delete headers['if-none-match'];
 
         const response = await axios({
-            url: `${httpServiceUrl}${req.url}`,  // Utiliza la URL completa desde la variable de entorno
+            url: `${httpServiceUrl}${req.url}`,
             method: req.method,
             headers: headers,
             data: req.body
@@ -53,8 +53,8 @@ async function requestLogin(req, res) {
 
 async function proxyRequest(req, res) {
     try {
-        // Obtiene la URL del servicio HTTP desde las variables de entorno
-        const httpServiceUrl = 'http://http-service:5002/http-service'
+        // const httpServiceUrl = 'http://http-service:5002/http-service';
+        const httpServiceUrl = process.env.HTTP_SERVICE_URL;
         console.log(`${httpServiceUrl}${req.url}`);
 
         const headers = { ...req.headers };
@@ -62,7 +62,7 @@ async function proxyRequest(req, res) {
         delete headers['if-none-match'];
 
         const response = await axios({
-            url: `${httpServiceUrl}${req.url}`,  // Utiliza la URL completa desde la variable de entorno
+            url: `${httpServiceUrl}${req.url}`,
             method: req.method,
             headers: headers,
             data: req.body

@@ -6,8 +6,8 @@ WORKDIR /app
 
 # Definimos las variables de entorno
 ENV PORT=5000
-ENV HTTP_SERVICE_URL=http://http-service:5001/http-service
-ENV WEBSOCKET_SERVICE_URL=http://localhost:3002
+# ENV HTTP_SERVICE_URL=http://http-service:5002/http-service
+# ENV WEBSOCKET_SERVICE_URL=http://localhost:3002
 
 # Copiamos los archivos de package.json y package-lock.json al contenedor
 COPY package*.json ./
